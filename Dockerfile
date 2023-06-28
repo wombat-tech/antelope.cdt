@@ -7,8 +7,8 @@ RUN apt-get update
 RUN apt-get install -y wget cmake
 
 # Download the CDK
-RUN wget https://github.com/AntelopeIO/cdt/releases/download/v3.1.0/cdt_3.1.0_amd64.deb
+RUN wget https://github.com/AntelopeIO/cdt/releases/download/v4.0.0/cdt_4.0.0_amd64.deb
 # Install CDK
-RUN apt-get install -y /cdt_3.1.0_amd64.deb
+RUN apt-get install -y /cdt_4.0.0_amd64.deb
 # Clean up a bit
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
